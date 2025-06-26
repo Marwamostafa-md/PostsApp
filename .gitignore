@@ -1,0 +1,75 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+.pub-cache/
+build/
+.idea/
+.flutter-plugins
+.flutter-plugins-dependencies
+.melos_tool/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# iOS
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+ios/Pods/
+ios/.symlinks/
+ios/Runner.xcworkspace/
+ios/Runner.xcodeproj/project.xcworkspace/
+
+# Android
+android/.gradle/
+android/captures/
+android/.idea/
+android/local.properties
+
+# macOS
+macos/Flutter/ephemeral/
+macos/.symlinks/
+macos/Pods/
+macos/Flutter/GeneratedPluginRegistrant.swift
+macos/Runner.xcworkspace/
+
+# Linux
+linux/flutter/ephemeral/
+linux/CMakeFiles/
+linux/Makefile
+linux/cmake-build-*/
+linux/Flutter/ephemeral/
+
+# Windows
+windows/flutter/ephemeral/
+windows/CMakeFiles/
+windows/Makefile
+windows/flutter/generated_plugin_registrant.cc
+
+# Web
+web/wasm/
+
+# Other
+*.iml
+*.lock
+*.log
+*.DS_Store
+*.swp
+*.tmp
+*.bak
+*.apk
+*.ipa
+
+# Firebase/Secrets
+.env
+.env.*
+google-services.json
+GoogleService-Info.plist
+
+# Coverage
+coverage/
+
+# Symbolication
+app.*.symbols
