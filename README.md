@@ -1,16 +1,54 @@
-# postsapp
+@@ -0,0 +1,53 @@
+# 📮 PostsApp
 
-A new Flutter project.
+A simple Flutter application that displays user posts using the JSONPlaceholder API. The app supports **local caching** with **sqflite**, and is built using **Clean Architecture** principles.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🔄 Fetches posts from the internet.
+- 💾 Caches data locally using SQLite.
+- 📡 Displays cached data when offline.
+- 🧱 Follows Clean Architecture structure.
+- 📱 Simple and responsive UI built with Flutter.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🧱 Clean Architecture Layers
+
+The project is divided into 3 main layers:
+
+1. **Presentation Layer**:
+   - Responsible for the UI.
+   - Uses `Bloc` for state management.
+
+2. **Domain Layer**:
+   - Contains `UseCases`, `Entities`, and abstract `Repositories`.
+
+3. **Data Layer**:
+   - Includes:
+     - `RemoteDataSource`: Fetches data from the internet.
+     - `LocalDataSource`: Handles local caching.
+     - `Models`: Transforms data between layers.
+     - `RepositoryImpl`: Implements the business logic.
+
+---
+
+## 💾 Local Caching with SQLite
+
+- The app uses **sqflite** to cache posts locally after the first fetch.
+- On the next app launch, data is loaded from the local database if no internet connection is available.
+- The caching is implemented in `LocalDataSourceImpl`.
+
+---
+
+## 🚀 Getting Started
+
+1. Make sure Flutter is installed on your system.
+2. Clone or download the repository.Add commentMore actions
+3. Run the following commands:
+
+```bash
+flutter pub get
+flutter run
